@@ -1,4 +1,5 @@
-/*import Appmenulateral from './Appmenulateral'*/
+/*import Appmenulateral from './Appmenulateral'
+import App from './App';*/
 import React from 'react';
 import { useNavigate, Route,Routes,NavLink, } from 'react-router-dom';
 import logo from './logo.svg';
@@ -7,12 +8,8 @@ import Produto from './componentes/Produto';
 import Servico from './componentes/Servico';
 import Emprendedores from './componentes/Empreendedores';
 import './Apprutas.css';
-/*import Estados from './componentes/Estados';
-import Se_inscriver from './componentes/Se_inscriver';
-import { NoMatch } from './componentes/NoMatch';
-import App from './App';*/
-
-
+import Seinscrever from './componentes/Seinscrever';
+import Estadosba from './componentes/Estadosba';
 function App() {
   const navigate = useNavigate()
   const goSobreNos = () => {
@@ -26,6 +23,12 @@ function App() {
    }
   const goEmpreendedores = () => {
    navigate("/componentes/Empreendedores")
+  }
+  const goEstadosba = () => {
+    navigate("/componentes/Estadosba")
+   }
+  const goSeinscrever = () => {
+   navigate("/componentes/Seinscrever")
   }
   return (
 
@@ -52,6 +55,14 @@ function App() {
               <NavLink to="/componentes/Empreendedores"style={({ isActive }) => 
                       (isActive ? {color: 'red'} : {color: 'blue'})}> Empreendedores </NavLink>
             </button>
+            <button onMouseOver={goEstadosba}>
+              <NavLink to="/componentes/Estadosba"style={({ isActive }) => 
+                      (isActive ? {color: 'red'} : {color: 'blue'})}> Estados </NavLink>
+            </button>
+            <button onMouseOver={goSeinscrever}>
+              <NavLink to="/componentes/Seinscrever"style={({ isActive }) => 
+                      (isActive ? {color: 'red'} : {color: 'blue'})}> Se_inscrever </NavLink>
+            </button>
 		      </nav>   
        </header>
 
@@ -60,7 +71,8 @@ function App() {
         <Route path="/componentes/Produto"element={<Produto />}/>
         <Route path="/componentes/Servico"element={<Servico />}/>
         <Route path="/componentes/Empreendedores"element={<Emprendedores />}/>
-        
+        <Route path="/componentes/Estadosba"element={<Estadosba />}/>
+        <Route path="/componentes/Seinscrever"element={<Seinscrever />}/>
       </Routes>
     
     </div>
