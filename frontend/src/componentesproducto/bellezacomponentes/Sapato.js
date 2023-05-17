@@ -1,9 +1,7 @@
 import React from "react";
 import './roupas.css';
-import data from "../data";
-
-
-function Roupas() {
+import data from "./data";
+function Sapato() {
     return (
         <div>
             <h1>ROUPAS</h1>
@@ -23,4 +21,4 @@ function Roupas() {
     )
 }
 
-export default Roupas;
+export default Sapato;

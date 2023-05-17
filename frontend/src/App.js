@@ -1,18 +1,17 @@
-/*import Appmenulateral from './Appmenulateral'
-import App from './App';*/
 import React from 'react';
 import { useNavigate, Route, Routes, NavLink, } from 'react-router-dom';
 import logo from './logo.svg';
 import SobreNos from './componentes/SobreNos';
 import Produto from './componentes/Produto';
+import Prodbelleza from './componentes/Prodbelleza';
 import Servico from './componentes/Servico';
 import Emprendedores from './componentes/Empreendedores';
 import './Apprutas.css';
 import Seinscrever from './componentes/Seinscrever';
 import Estadosba from './componentes/Estadosba';
-import Roupas from './componentes/roupas';
-
-
+import Roupas from './componentesproducto/bellezacomponentes/Roupas';
+import Sapato from './componentesproducto/bellezacomponentes/Sapato';
+import Brincos from './componentesproducto/bellezacomponentes/Brincos';
 function App() {
   const navigate = useNavigate()
   const goSobreNos = () => {
@@ -72,12 +71,17 @@ function App() {
 
       <Routes>
         <Route path="/SobreNos" element={<SobreNos />} />
-        <Route path="/componentes/Produto" element={<Produto />} />
+        <Route path="/componentes/Produto" element={<Produto />} >
+            <Route path="Prodbelleza" element={<Prodbelleza />} >
+              <Route path='Roupas' element={<Roupas />}></Route>
+              <Route path='Sapato' element={<Sapato />}></Route>
+              <Route path='Brincos' element={<Brincos />}></Route>
+            </Route>
+        </Route>
         <Route path="/componentes/Servico" element={<Servico />} />
         <Route path="/componentes/Empreendedores" element={<Emprendedores />} />
         <Route path="/componentes/Estadosba" element={<Estadosba />} />
         <Route path="/componentes/Seinscrever" element={<Seinscrever />} />
-        <Route path='/componentes/Roupas' element={<Roupas />} />
       </Routes>
 
     </div >
@@ -87,3 +91,22 @@ function App() {
 }
 
 export default App;
+/*
+<Route path='Sapato' element={<Sapato />}></Route>
+<Route path='Brincos' element={<Brincos />}></Route>*/
+
+/*<Route path="Prodomésticos" element={<Proddomestico />}>
+<Route path='Cozinha' element={<Cozinha />}></Route>
+<Route path='Limpeza' element={<Limpeza />}></Route>
+<Route path='Electricos' element={<Electricos />}></Route>
+</Route>
+<Route path="Campo" element={<Campo />}>
+<Route path='Frutas' element={<Frutas />}></Route>
+<Route path='Verduras' element={<Verduras />}></Route>
+<Route path='Legumbres' element={<Legumbres />}></Route>
+</Route>
+<Route path="Açougue" element={< Açougue/>}>
+<Route path='Carne' element={<Carne />}></Route>
+<Route path='Frango' element={<Frango />}></Route>
+<Route path='Cerdo' element={<Cerdo />}></Route>
+</Route>*/

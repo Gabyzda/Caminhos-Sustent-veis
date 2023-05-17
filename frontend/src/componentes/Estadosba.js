@@ -1,7 +1,5 @@
 import React from "react";
-/*import SobreNos from "./SobreNos";*/
 import { Link } from 'react-router-dom';
-/*import { useState } from "react";*/
 import '../Apprutas.css';
 function Estadosba() {
     return(
