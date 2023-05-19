@@ -16,6 +16,7 @@ import Brincos from './componentesproducto/bellezacomponentes/Brincos';
 import Cozinha from './componentesproducto/componentesdomestico/Cozinha';
 import Limpeza from './componentesproducto/componentesdomestico/Limpeza';
 import Electricos from './componentesproducto/componentesdomestico/Electricos';
+import Individual from './componentesproducto/bellezacomponentes/Individual';
 
 export default function App() {
   const navigate = useNavigate()
@@ -93,6 +94,7 @@ export default function App() {
         <Route path="/Empreendedores" element={<Emprendedores />} />
         <Route path="/Estadosba" element={<Estadosba />} />
         <Route path="/Seinscrever" element={<Seinscrever />} />
+        <Route path='/produto/:slug' element={<Individual />} />
       </Routes>
 
     </div >

@@ -1,6 +1,7 @@
 import React from "react";
 import './roupas.css';
 import data from "./data";
+import { Link } from "react-router-dom";
 
 export default function Roupas() {
     return (
@@ -9,13 +10,13 @@ export default function Roupas() {
             <div className="produtos">
                 {data.products.map(product => (
                     <div className="produto" key={product.slug}>
-                        <a href={`/produto/${product.slug}`}>
+                        <Link to={`/produto/${product.slug}`}>
                             <img src={product.image} alt={product.name} />
-                        </a>
+                        </Link>
                         <div className="produto-info">
-                            <a href={`/produto/${product.slug}`}>
+                            <Link to={`/produto/${product.slug}`}>
                                 <p>{product.name}</p>
-                            </a>
+                            </Link>
                             <p>
                                 <strong>R${product.price}</strong>
                             </p>
