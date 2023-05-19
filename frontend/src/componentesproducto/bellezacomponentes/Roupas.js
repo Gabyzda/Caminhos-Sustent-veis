@@ -9,10 +9,16 @@ export default function Roupas() {
             <div className="produtos">
                 {data.products.map(product => (
                     <div className="produto" key={product.slug}>
-                        <img src={product.image} alt={product.name} />
+                        <a href={`/produto/${product.slug}`}>
+                            <img src={product.image} alt={product.name} />
+                        </a>
                         <div className="produto-info">
-                            <p>{product.name}</p>
-                            <p>{product.price}</p>
+                            <a href={`/produto/${product.slug}`}>
+                                <p>{product.name}</p>
+                            </a>
+                            <p>
+                                <strong>R${product.price}</strong>
+                            </p>
                             <button>Comprar</button>
                         </div>
                     </div>))
