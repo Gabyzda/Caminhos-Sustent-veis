@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import SobreNos from './componentes/SobreNos';
 import Produto from './componentes/Produto';
 import Prodbelleza from './componentes/Prodbelleza';
+import Proddomestico from './componentes/Proddomestico';
 import Servico from './componentes/Servico';
 import Emprendedores from './componentes/Empreendedores';
 import './Apprutas.css';
@@ -12,25 +13,28 @@ import Estadosba from './componentes/Estadosba';
 import Roupas from './componentesproducto/bellezacomponentes/Roupas';
 import Sapato from './componentesproducto/bellezacomponentes/Sapato';
 import Brincos from './componentesproducto/bellezacomponentes/Brincos';
+import Cozinha from './componentesproducto/componentesdomestico/Cozinha';
+import Limpeza from './componentesproducto/componentesdomestico/Limpeza';
+import Electricos from './componentesproducto/componentesdomestico/Electricos';
 function App() {
   const navigate = useNavigate()
   const goSobreNos = () => {
     navigate("/SobreNos")
   }
   const goProduto = () => {
-    navigate("/componentes/Produto")
+    navigate("/Produto")
   }
   const goServico = () => {
-    navigate("/componentes/Servico")
+    navigate("/Servico")
   }
   const goEmpreendedores = () => {
-    navigate("/componentes/Empreendedores")
+    navigate("/Empreendedores")
   }
   const goEstadosba = () => {
-    navigate("/componentes/Estadosba")
+    navigate("/Estadosba")
   }
   const goSeinscrever = () => {
-    navigate("/componentes/Seinscrever")
+    navigate("/Seinscrever")
   }
   return (
 
@@ -46,23 +50,23 @@ function App() {
               (isActive ? { color: 'red' } : { color: 'blue' })} > SobreNos </NavLink>
           </button>
           <button onMouseOver={goProduto}>
-            <NavLink to="/componentes/Produto" style={({ isActive }) =>
+            <NavLink to="/Produto" style={({ isActive }) =>
               (isActive ? { color: 'red' } : { color: 'blue' })}> Produto </NavLink>
           </button>
           <button onMouseOver={goServico}>
-            <NavLink to="/componentes/Servico" style={({ isActive }) =>
+            <NavLink to="/Servico" style={({ isActive }) =>
               (isActive ? { color: 'red' } : { color: 'blue' })}> Serviços </NavLink>
           </button>
           <button onMouseOver={goEmpreendedores}>
-            <NavLink to="/componentes/Empreendedores" style={({ isActive }) =>
+            <NavLink to="/Empreendedores" style={({ isActive }) =>
               (isActive ? { color: 'red' } : { color: 'blue' })}> Empreendedores </NavLink>
           </button>
           <button onMouseOver={goEstadosba}>
-            <NavLink to="/componentes/Estadosba" style={({ isActive }) =>
+            <NavLink to="/Estadosba" style={({ isActive }) =>
               (isActive ? { color: 'red' } : { color: 'blue' })}> Estados </NavLink>
           </button>
           <button onMouseOver={goSeinscrever}>
-            <NavLink to="/componentes/Seinscrever" style={({ isActive }) =>
+            <NavLink to="/Seinscrever" style={({ isActive }) =>
               (isActive ? { color: 'red' } : { color: 'blue' })}> Se_inscrever </NavLink>
           </button>
         </nav>
@@ -71,17 +75,22 @@ function App() {
 
       <Routes>
         <Route path="/SobreNos" element={<SobreNos />} />
-        <Route path="/componentes/Produto" element={<Produto />} >
+        <Route path="/Produto" element={<Produto />} >
             <Route path="Prodbelleza" element={<Prodbelleza />} >
               <Route path='Roupas' element={<Roupas />}></Route>
               <Route path='Sapato' element={<Sapato />}></Route>
               <Route path='Brincos' element={<Brincos />}></Route>
             </Route>
+            <Route path="Proddomestico" element={<Proddomestico />}>
+              <Route path='Cozinha' element={<Cozinha />}></Route>
+              <Route path='Limpeza' element={<Limpeza />}></Route>
+              <Route path='Electricos' element={<Electricos />}></Route>
+            </Route>
         </Route>
-        <Route path="/componentes/Servico" element={<Servico />} />
-        <Route path="/componentes/Empreendedores" element={<Emprendedores />} />
-        <Route path="/componentes/Estadosba" element={<Estadosba />} />
-        <Route path="/componentes/Seinscrever" element={<Seinscrever />} />
+        <Route path="/Servico" element={<Servico />} />
+        <Route path="/Empreendedores" element={<Emprendedores />} />
+        <Route path="/Estadosba" element={<Estadosba />} />
+        <Route path="/Seinscrever" element={<Seinscrever />} />
       </Routes>
 
     </div >

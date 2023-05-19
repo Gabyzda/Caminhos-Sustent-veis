@@ -5,7 +5,7 @@ import data from "./data";
 function Brincos() {
     return (
         <div>
-            <h1>ROUPAS</h1>
+            <h1>Brincos</h1>
             <div className="produtos">
                 {data.products.map(product => (
                     <div className="produto" key={product.slug}>

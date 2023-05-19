@@ -3,13 +3,14 @@ import { useNavigate, NavLink, Outlet} from 'react-router-dom';
 const Prodbelleza = () => {
     const navigate = useNavigate()
     const goRoupas = () => {
-        navigate("/componentes/Produto/Prodbelleza/Roupas")
+        navigate("/Produto/Prodbelleza/Roupas")
+        
         }
     const goSapato = () => {
-        navigate("/componentes/Produto/Prodbelleza/Sapato")
+        navigate("/Produto/Prodbelleza/Sapato")
         }
     const goBrincos = () => {
-        navigate("/componentes/Produto/Prodbelleza/Brincos")
+        navigate("/Produto/Prodbelleza/Brincos")
     }
    
     return (
@@ -19,15 +20,15 @@ const Prodbelleza = () => {
             <h3>Categorias Producto de Belleza</h3>  
             <nav className="oldos_modulo">
             <button onMouseOver={goRoupas}>
-             <NavLink to="componentes/Produto/Prodbelleza/Roupas"style={({ isActive }) => 
-                      (isActive ? {color: 'red'} : {color: 'blue'})}> Ropa </NavLink>
+             <NavLink to="/Produto/Prodbelleza/Roupas"style={({ isActive }) => 
+                      (isActive ? {color: 'red'} : {color: 'blue'})}> Roupas </NavLink>
             </button> 
             <button onMouseOver={goSapato}>
-             <NavLink to="/componentes/Produto/Prodbelleza/Sapato"style={({ isActive }) => 
-                      (isActive ? {color: 'red'} : {color: 'blue'})}> Sapatos </NavLink>
+             <NavLink to="/Produto/Prodbelleza/Sapato"style={({ isActive }) => 
+                      (isActive ? {color: 'red'} : {color: 'blue'})}> Sapato </NavLink>
             </button>
             <button onMouseOver={goBrincos}>
-             <NavLink to="/componentes/Produto/Prodbelleza/Brincos"style={({ isActive }) => 
+             <NavLink to="/Produto/Prodbelleza/Brincos"style={({ isActive }) => 
                      (isActive ? {color: 'red'} : {color: 'blue'})}> Brincos </NavLink>
             </button>
             </nav>
@@ -39,3 +40,15 @@ const Prodbelleza = () => {
 }
 
 export default Prodbelleza;
+
+/*
+  const goRoupas = () => {
+        navigate("Prodbelleza/componentesproducto/bellezacomponentes/Roupas")
+        }
+    const goSapato = () => {
+        navigate("/componentes/Produto/Prodbelleza/componetesproductos/bellezacomponentes/Sapato")
+        }
+    const goBrincos = () => {
+        navigate("/componentes/Produto/Prodbelleza/componetesproductos/bellezacomponentes/Brincos")
+    }
+    */
