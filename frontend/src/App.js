@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, Route, Routes, NavLink, } from 'react-router-dom';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import SobreNos from './componentes/SobreNos';
 import Produto from './componentes/Produto';
 import Prodbelleza from './componentes/Prodbelleza';
@@ -16,7 +16,8 @@ import Brincos from './componentesproducto/bellezacomponentes/Brincos';
 import Cozinha from './componentesproducto/componentesdomestico/Cozinha';
 import Limpeza from './componentesproducto/componentesdomestico/Limpeza';
 import Electricos from './componentesproducto/componentesdomestico/Electricos';
-function App() {
+
+export default function App() {
   const navigate = useNavigate()
   const goSobreNos = () => {
     navigate("/SobreNos")
@@ -36,12 +37,13 @@ function App() {
   const goSeinscrever = () => {
     navigate("/Seinscrever")
   }
+
   return (
 
     <div>
       <header>
         <nav>
-          <NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink>
+          {/*<NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink>*/}
           <p> Caminhos Sustentáveis
             <NavLink to="/" style={{ textDecoration: 'none', color: "black" }} > “ Porque você vale muito...” </NavLink>
           </p>
@@ -76,16 +78,16 @@ function App() {
       <Routes>
         <Route path="/SobreNos" element={<SobreNos />} />
         <Route path="/Produto" element={<Produto />} >
-            <Route path="Prodbelleza" element={<Prodbelleza />} >
-              <Route path='Roupas' element={<Roupas />}></Route>
-              <Route path='Sapato' element={<Sapato />}></Route>
-              <Route path='Brincos' element={<Brincos />}></Route>
-            </Route>
-            <Route path="Proddomestico" element={<Proddomestico />}>
-              <Route path='Cozinha' element={<Cozinha />}></Route>
-              <Route path='Limpeza' element={<Limpeza />}></Route>
-              <Route path='Electricos' element={<Electricos />}></Route>
-            </Route>
+          <Route path="Prodbelleza" element={<Prodbelleza />} >
+            <Route path='Roupas' element={<Roupas />}></Route>
+            <Route path='Sapato' element={<Sapato />}></Route>
+            <Route path='Brincos' element={<Brincos />}></Route>
+          </Route>
+          <Route path="Proddomestico" element={<Proddomestico />}>
+            <Route path='Cozinha' element={<Cozinha />}></Route>
+            <Route path='Limpeza' element={<Limpeza />}></Route>
+            <Route path='Electricos' element={<Electricos />}></Route>
+          </Route>
         </Route>
         <Route path="/Servico" element={<Servico />} />
         <Route path="/Empreendedores" element={<Emprendedores />} />
@@ -94,12 +96,10 @@ function App() {
       </Routes>
 
     </div >
-
-
   );
 }
 
-export default App;
+
 /*
 <Route path='Sapato' element={<Sapato />}></Route>
 <Route path='Brincos' element={<Brincos />}></Route>*/

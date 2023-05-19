@@ -2,7 +2,7 @@ import React from "react";
 import './roupas.css';
 import data from "./data";
 
-function Electricos () {
+export default function Electricos() {
     return (
         <div>
             <h1>Electricos</h1>
@@ -21,5 +21,3 @@ function Electricos () {
         </div>
     )
 }
-
-export default Electricos;

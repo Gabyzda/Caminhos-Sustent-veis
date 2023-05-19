@@ -1,5 +1,6 @@
 import React from 'react';
-import { useNavigate, NavLink, Outlet} from 'react-router-dom';
+import { useNavigate, NavLink, Outlet } from 'react-router-dom';
+
 const Produto = () => {
 
     const navigate = useNavigate()
@@ -18,29 +19,37 @@ const Produto = () => {
     }
     return (
         <div >
-            <hr/>
+            <hr />
             <div className="App-headerdos">
-            <h3>Categoria de producto</h3>  
-            <nav className="oldos_modulo">
-            <button onMouseOver={goProdbelleza}>
-             <NavLink to="/Produto/Prodbelleza" style={({ isActive }) => 
-                      (isActive ? {color: 'red'} : {color: 'blue'})} >Producto de Belleza </NavLink>
-            </button> 
-            <button onMouseOver={goProddomestico}>
-             <NavLink to="/Produto/Proddomestico"style={({ isActive }) => 
-                      (isActive ? {color: 'red'} : {color: 'blue'})}>Productos Domesticos </NavLink>
-            </button>
-            <button onMouseOver={goCampo}>
-             <NavLink to="/Produto/Campo"style={({ isActive }) => 
-                      (isActive ? {color: 'red'} : {color: 'blue'})}> Do campo </NavLink>
-            </button>
-            <button onMouseOver={goAçouge}>
-             <NavLink to="/Produto/Açoge"style={({ isActive }) => 
-                      (isActive ? {color: 'red'} : {color: 'blue'})}>Açouge</NavLink>
-            </button>
-             </nav>
+                <h3>Categoria de producto</h3>
+                <nav className="oldos_modulo">
+                    <button onMouseOver={goProdbelleza}>
+                        <NavLink to="/Produto/Prodbelleza" style={({ isActive }) =>
+                            (isActive ? { color: 'red' } : { color: 'blue' })} >
+                            Producto de Belleza
+                        </NavLink>
+                    </button>
+                    <button onMouseOver={goProddomestico}>
+                        <NavLink to="/Produto/Proddomestico" style={({ isActive }) =>
+                            (isActive ? { color: 'red' } : { color: 'blue' })}>
+                            Productos Domesticos
+                        </NavLink>
+                    </button>
+                    <button onMouseOver={goCampo}>
+                        <NavLink to="/Produto/Campo" style={({ isActive }) =>
+                            (isActive ? { color: 'red' } : { color: 'blue' })}>
+                            Do campo
+                        </NavLink>
+                    </button>
+                    <button onMouseOver={goAçouge}>
+                        <NavLink to="/Produto/Açoge" style={({ isActive }) =>
+                            (isActive ? { color: 'red' } : { color: 'blue' })}>
+                            Açouge
+                        </NavLink>
+                    </button>
+                </nav>
             </div>
-            <hr/>
+            <hr />
             <Outlet />
         </div>
     )
@@ -62,8 +71,8 @@ export default Produto;
         navigate("/componentes/Produto/Açouge")
     }*/
 
-    /* NAV
-    <button onMouseOver={goAçouge}>
-             <NavLink to="/componentes/Produto/Açoge"style={({ isActive }) => 
-                      (isActive ? {color: 'red'} : {color: 'blue'})}>Açouge</NavLink>
-            </button>*/
+/* NAV
+<button onMouseOver={goAçouge}>
+         <NavLink to="/componentes/Produto/Açoge"style={({ isActive }) => 
+                  (isActive ? {color: 'red'} : {color: 'blue'})}>Açouge</NavLink>
+        </button>*/

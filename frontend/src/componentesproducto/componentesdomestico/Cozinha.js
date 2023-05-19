@@ -2,7 +2,7 @@ import React from "react";
 import './roupas.css';
 import data from "./data";
 
-function Cozinha () {
+export default function Cozinha() {
     return (
         <div>
             <h1>Cozinha</h1>
@@ -21,5 +21,3 @@ function Cozinha () {
         </div>
     )
 }
-
-export default Cozinha;

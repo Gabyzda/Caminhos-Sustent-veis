@@ -2,7 +2,7 @@ import React from "react";
 import './roupas.css';
 import data from "./data";
 
-function Limpeza () {
+export default function Limpeza() {
     return (
         <div>
             <h1>Limpeza</h1>
@@ -21,5 +21,3 @@ function Limpeza () {
         </div>
     )
 }
-
-export default Limpeza;

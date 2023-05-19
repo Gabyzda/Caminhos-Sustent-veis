@@ -2,8 +2,7 @@ import React from "react";
 import './roupas.css';
 import data from "./data";
 
-
-function Roupas() {
+export default function Roupas() {
     return (
         <div>
             <h1>ROUPAS</h1>
@@ -22,5 +21,3 @@ function Roupas() {
         </div>
     )
 }
-
-export default Roupas;

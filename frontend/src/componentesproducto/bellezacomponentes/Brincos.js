@@ -2,7 +2,7 @@ import React from "react";
 import './roupas.css';
 import data from "./data";
 
-function Brincos() {
+export default function Brincos() {
     return (
         <div>
             <h1>Brincos</h1>
@@ -21,5 +21,3 @@ function Brincos() {
         </div>
     )
 }
-
-export default Brincos;
