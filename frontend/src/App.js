@@ -5,8 +5,10 @@ import SobreNos from './componentes/SobreNos';
 import Produto from './componentes/Produto';
 import Prodbelleza from './componentes/Prodbelleza';
 import Proddomestico from './componentes/Proddomestico';
+import Emprendeproduto from './componentes/Emprendeproduto';
+import Emprendeserviço from './componentes/Emprendeserviço';
 import Servico from './componentes/Servico';
-import Emprendedores from './componentes/Empreendedores';
+import Empreendedores from './componentes/Empreendedores';
 import './Apprutas.css';
 import Seinscrever from './componentes/Seinscrever';
 import Estadosba from './componentes/Estadosba';
@@ -91,7 +93,10 @@ export default function App() {
           </Route>
         </Route>
         <Route path="/Servico" element={<Servico />} />
-        <Route path="/Empreendedores" element={<Emprendedores />} />
+        <Route path="/Empreendedores" element={<Empreendedores />} >
+          <Route path="Emprendeproduto" element={<Emprendeproduto />} ></Route>
+          <Route path="Emprendeserviço" element={<Emprendeserviço />}></Route>
+        </Route>
         <Route path="/Estadosba" element={<Estadosba />} />
         <Route path="/Seinscrever" element={<Seinscrever />} />
         <Route path='/produto/:slug' element={<Individual />} />
@@ -100,24 +105,3 @@ export default function App() {
     </div >
   );
 }
-
-
-/*
-<Route path='Sapato' element={<Sapato />}></Route>
-<Route path='Brincos' element={<Brincos />}></Route>*/
-
-/*<Route path="Prodomésticos" element={<Proddomestico />}>
-<Route path='Cozinha' element={<Cozinha />}></Route>
-<Route path='Limpeza' element={<Limpeza />}></Route>
-<Route path='Electricos' element={<Electricos />}></Route>
-</Route>
-<Route path="Campo" element={<Campo />}>
-<Route path='Frutas' element={<Frutas />}></Route>
-<Route path='Verduras' element={<Verduras />}></Route>
-<Route path='Legumbres' element={<Legumbres />}></Route>
-</Route>
-<Route path="Açougue" element={< Açougue/>}>
-<Route path='Carne' element={<Carne />}></Route>
-<Route path='Frango' element={<Frango />}></Route>
-<Route path='Cerdo' element={<Cerdo />}></Route>
-</Route>*/
