@@ -19,6 +19,7 @@ import Cozinha from './componentesproducto/componentesdomestico/Cozinha';
 import Limpeza from './componentesproducto/componentesdomestico/Limpeza';
 import Electricos from './componentesproducto/componentesdomestico/Electricos';
 import Individual from './componentesproducto/bellezacomponentes/Individual';
+import Footer from './componentes/Footer';
 
 export default function App() {
   const navigate = useNavigate()
@@ -101,7 +102,12 @@ export default function App() {
         <Route path="/Seinscrever" element={<Seinscrever />} />
         <Route path='/produto/:slug' element={<Individual />} />
       </Routes>
+   <div>
+   <Footer/>
+   </div>
+    
 
-    </div >
+      
+    </div>
   );
 }

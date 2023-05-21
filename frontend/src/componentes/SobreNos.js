@@ -1,20 +1,28 @@
 import React from "react";
-/*import SobreNos from "./SobreNos";*/
-import { Link } from 'react-router-dom';
-/*import { useState } from "react";*/
-import '../Apprutas.css';
 
-export default function Empreendedores() {
+import Carroulsel from "./Carroulsel";
+import CardDinamic from "./CardDinamic"
+import "./App.css";
+
+function SobreNos() {
   return (
-    <div>
-      <form className="presenta_css">
-        <div>
-          <h3> Caminhos Sustentáveis </h3>
-          <h1 className="centrasobrenos">
-            Pagina SobreNos En construccion </h1>
-          <Link to="/" style={{ textDecoration: 'none', color: "red" }} > ..[ RETORNAR A PÁGINA INICIAL ].. </Link>
-        </div>
-      </form>
+    <div className="SobreNos">
+   
+
+      <h1> CAMINHOS SUSTENTAVEIS</h1>
+      <CardDinamic />
+      <h1>SobreNos</h1>
+      <p>
+     
+        Somos Migrantes Venezolanos, un equipo formado por igualda conformado por
+        dos mujeres y dos hobres con la diveridad en edades desde 23 años hasta
+        los 61aaños.Esta diversidad nos permite plasmar la necesidad de recibir
+        apoyo en la resilencia en Brasil, desde diferentes opticas.
+      </p>
+      <Carroulsel />
+   
     </div>
   );
 }
+
+export default SobreNos;
