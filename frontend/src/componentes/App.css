@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.Empleabilidade ul li {
+  list-style: none;
+  color: white;
+}
+.Empleabilidade ul li a{
+  list-style: none;
+  color: white;
+}
+
+.Empleabilidade {
+  background-color: rgb(10, 10, 221);
+  color:white
+}
+.Footer {
+
+  background-color: rgb(160, 124, 5);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
