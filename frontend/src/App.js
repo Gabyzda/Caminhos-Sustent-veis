@@ -102,7 +102,7 @@ export default function App() {
         <Route path="/Seinscrever" element={<Seinscrever />} />
         <Route path='/produto/:slug' element={<Individual />} />
       </Routes>
-   <div>
+   <div className='Footer'>
    <Footer/>
    </div>
     

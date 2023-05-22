@@ -13,11 +13,9 @@ function SobreNos() {
       <CardDinamic />
       <h1>SobreNos</h1>
       <p>
-     
-        Somos Migrantes Venezolanos, un equipo formado por igualda conformado por
-        dos mujeres y dos hobres con la diveridad en edades desde 23 años hasta
-        los 61aaños.Esta diversidad nos permite plasmar la necesidad de recibir
-        apoyo en la resilencia en Brasil, desde diferentes opticas.
+      Somos Migrantes Venezuelanos, uma equipe formada pela igualdade de gênero
+      </p> 
+      <p>Composta por duas mulheres e dois homens com idades diferentes. Temos de 23 a 61 anos de idade. Essa diversidade nos permite expressar a necessidade de apoio à resiliência no Brasil a partir de diferentes perspectivas.
       </p>
       <Carroulsel />
    

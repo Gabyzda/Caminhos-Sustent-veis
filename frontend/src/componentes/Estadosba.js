@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-
+import '../Apprutas.css';
 
 function Estadosba() {
   return (
@@ -48,7 +48,9 @@ function Estadosba() {
             </a>
           </li>
         </ul>
-        <img src="https://img.freepik.com/foto-gratis/disparo-vertical-amigable-chica-asiatica-sonriendo-sirviendo-cafe-barista-preparandote-taza-cafe_1258-134034.jpg?w=360&t=st=1684696202~exp=1684696802~hmac=4ebed747a1eb2945b1fdf0b401e48a42f741a52e5bcca41edcc49bcec21222aa"/>
+        <img src="https://img.freepik.com/foto-gratis/sonriente-chica-asiatica-barista-haciendo-cafe-sosteniendo-taza-delantal-uniforme-cafe-pie-cerca-cuenta_1258-130464.jpg?size=626&ext=jpg&uid=R68575601&ga=GA1.2.1328558379.1681791155&semt=sph" width="740 px" height= "493px
+        "/>
+      <img src="https://img.freepik.com/foto-gratis/trabajador-supermercado-suministrando-alimentos-al-departamento-frutas_342744-1075.jpg?w=740&t=st=1684710070~exp=1684710670~hmac=b640388932d773d9cd8686a0bda3f5e17c76257707d4e4aa5d219573ece27102"/>
       </div>
 
       <div className="Emprendedurismo">
