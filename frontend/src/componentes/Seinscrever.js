@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 /*import SobreNos from "./SobreNos";*/
 /*import { useState } from "react";*/
 import '../Apprutas.css';
-import "../form.css"
+/*import "../form.css"*/
 
 export default function Seinscrever() {
   const form = useRef();

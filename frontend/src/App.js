@@ -45,11 +45,15 @@ export default function App() {
   return (
 
     <div>
+ 
       <header>
         <nav>
           {/*<NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink>*/}
-          <p> Caminhos Sustentáveis
-            <NavLink to="/" style={{ textDecoration: 'none', color: "black" }} > “ Porque você vale muito...” </NavLink>
+          <h1>
+            <NavLink to="/SobreNos" style={{ textDecoration: 'none', color: "black" }} > Home</NavLink>
+          </h1>
+          <p>Caminhos Sustentáveis
+            <NavLink to="/SobreNos" style={{ textDecoration: 'none', color: "black" }} > “ Porque você vale muito...” </NavLink>
           </p>
           <button onMouseOver={goSobreNos}>
             <NavLink to="/SobreNos" style={({ isActive }) =>
@@ -76,8 +80,9 @@ export default function App() {
               (isActive ? { color: 'red' } : { color: 'blue' })}> Se_inscrever </NavLink>
           </button>
         </nav>
-      </header>
+      </header> 
 
+   
 
       <Routes>
         <Route path="/SobreNos" element={<SobreNos />} />
