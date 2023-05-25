@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './roupas.css';
-import data from "./data";
+//import data from "./data";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Roupas() {
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios.get('/api/products')
+            setProducts(result.data);
+        };
+        fetchData();
+    }, []);
     return (
         <div>
             <h1>ROUPAS</h1>
             <div className="produtos">
-                {data.products.map(product => (
+                {products.map(product => (
                     <div className="produto" key={product.slug}>
                         <Link to={`/produto/${product.slug}`}>
                             <img src={product.image} alt={product.name} />
