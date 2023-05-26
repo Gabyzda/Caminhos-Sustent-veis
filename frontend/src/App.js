@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes, NavLink, } from 'react-router-dom';
-//import logo from './logo.svg';
+import logo_large from './logo_large.png';
 import SobreNos from './componentes/SobreNos';
 import Produto from './componentes/Produto';
 import Prodbelleza from './componentes/Prodbelleza';
@@ -9,7 +9,7 @@ import Emprendeproduto from './componentes/Emprendeproduto';
 import Emprendeserviço from './componentes/Emprendeserviço';
 import Servico from './componentes/Servico';
 import Empreendedores from './componentes/Empreendedores';
-/*import './Apprutas.css';*/
+import './Apprutas.css';
 import Seinscrever from './componentes/Seinscrever';
 import Estadosba from './componentes/Estadosba';
 import Roupas from './componentesproducto/bellezacomponentes/Roupas';
@@ -20,83 +20,99 @@ import Limpeza from './componentesproducto/componentesdomestico/Limpeza';
 import Electricos from './componentesproducto/componentesdomestico/Electricos';
 import Individual from './componentesproducto/bellezacomponentes/Individual';
 import Footer from './componentes/Footer';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import { LinkContainer } from 'react-router-bootstrap';
 
 export default function App() {
-  
+
   return (
 
-    <div>
- 
-      <header>
-        <nav>
-          {/*<NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink>*/}
-          <h1>
-            <NavLink to="/SobreNos" style={{ textDecoration: 'none', color: "black" }} > Home</NavLink>
-          </h1>
-          <p>Caminhos Sustentáveis
-            <NavLink to="/SobreNos" style={{ textDecoration: 'none', color: "black" }} > “ Porque você vale muito...” </NavLink>
-          </p>
-          <NavLink to="/SobreNos" style={({ isActive }) => ({
-            textDecoration: 'none',
-            color: isActive ? 'blue' : 'black',
-            marginRight: '13px'
-             })}>SobreNos</NavLink>
-          <NavLink to="/Produto" style={({ isActive }) => ({
-            textDecoration: 'none',
-            color: isActive ? 'blue' : 'black',
-            marginRight: '13px'
-            })}>Produto</NavLink>
-          <NavLink to="/Servico" style={({ isActive }) => ({
-            textDecoration: 'none',
-            color: isActive ? 'blue' : 'black',
-            marginRight: '13px'
-            })}>Serviços</NavLink>
-          <NavLink to="/Empreendedores" style={({ isActive }) => ({
-            textDecoration: 'none',
-            color: isActive ? 'blue' : 'black',
-            marginRight: '13px'
-            })}>Empreendedores</NavLink>
-          <NavLink to="/Estadosba" style={({ isActive }) => ({
-            textDecoration: 'none',
-            color: isActive ? 'blue' : 'black',
-            marginRight: '13px'
-            })}>Estados</NavLink>
-          <NavLink to="/Seinscrever" style={({ isActive }) => ({
-            textDecoration: 'none',
-            color: isActive ? 'blue' : 'black',
-            marginRight: '13px'
-            })}>Se_inscrever</NavLink>
-        </nav>
-      </header> 
+    <div className='d-flex flex-column site-container'>
 
-      <Routes>
-        <Route path="/" element={<SobreNos />} />
-        <Route path="/SobreNos" element={<SobreNos />} />
-        <Route path="/Produto" element={<Produto />} >
-          <Route path="Prodbelleza" element={<Prodbelleza />} >
-            <Route path='Roupas' element={<Roupas />}></Route>
-            <Route path='Sapato' element={<Sapato />}></Route>
-            <Route path='Brincos' element={<Brincos />}></Route>
-          </Route>
-          <Route path="Proddomestico" element={<Proddomestico />}>
-            <Route path='Cozinha' element={<Cozinha />}></Route>
-            <Route path='Limpeza' element={<Limpeza />}></Route>
-            <Route path='Electricos' element={<Electricos />}></Route>
-          </Route>
-        </Route>
-        <Route path="/Servico" element={<Servico />} />
-        <Route path="/Empreendedores" element={<Empreendedores />} >
-          <Route path="Emprendeproduto" element={<Emprendeproduto />} ></Route>
-          <Route path="Emprendeserviço" element={<Emprendeserviço />}></Route>
-        </Route>
-        <Route path="/Estadosba" element={<Estadosba />} />
-        <Route path="/Seinscrever" element={<Seinscrever />} />
-        <Route path='/produto/:slug' element={<Individual />} />
-      </Routes>
-   <div className='Footer'>
-   <Footer/>
-   </div>
-      
+      <header>
+        <Navbar className='menu-header'>
+          <Container>
+            <LinkContainer to="/" exact>
+              <Navbar.Brand>
+                <img src={logo_large} className="App-logo" alt="logo" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+              </Navbar.Brand>
+            </LinkContainer>
+            <div className='menu'>
+              {/*<h1>
+                 <NavLink to="/SobreNos" style={{ textDecoration: 'none', color: "black" }} > Home</NavLink>
+                 </h1>
+                     <p>Caminhos Sustentáveis
+                 <NavLink to="/SobreNos" style={{ textDecoration: 'none', color: "black" }} > “ Porque você vale muito...” </NavLink>
+                 </p>*/
+              }
+              <NavLink to="/SobreNos" style={({ isActive }) => ({
+                textDecoration: 'none',
+                color: isActive ? 'blue' : 'black',
+                marginRight: '13px'
+              })}>SobreNós</NavLink>
+              <NavLink to="/Produto" style={({ isActive }) => ({
+                textDecoration: 'none',
+                color: isActive ? 'blue' : 'black',
+                marginRight: '13px'
+              })}>Produtos</NavLink>
+              <NavLink to="/Servico" style={({ isActive }) => ({
+                textDecoration: 'none',
+                color: isActive ? 'blue' : 'black',
+                marginRight: '13px'
+              })}>Serviços</NavLink>
+              <NavLink to="/Empreendedores" style={({ isActive }) => ({
+                textDecoration: 'none',
+                color: isActive ? 'blue' : 'black',
+                marginRight: '13px'
+              })}>Empreendedores</NavLink>
+              <NavLink to="/Estadosba" style={({ isActive }) => ({
+                textDecoration: 'none',
+                color: isActive ? 'blue' : 'black',
+                marginRight: '13px'
+              })}>Empregabilidade</NavLink>
+              <NavLink to="/Seinscrever" style={({ isActive }) => ({
+                textDecoration: 'none',
+                color: isActive ? 'blue' : 'black',
+                marginRight: '13px'
+              })}>Inscrever-se</NavLink>
+            </div>
+          </Container>
+
+        </Navbar>
+      </header>
+      <main>
+        <Container>
+          <Routes>
+            <Route path="/" element={<SobreNos />} />
+            <Route path="/SobreNos" element={<SobreNos />} />
+            <Route path="/Produto" element={<Produto />} >
+              <Route path="Prodbelleza" element={<Prodbelleza />} >
+                <Route path='Roupas' element={<Roupas />}></Route>
+                <Route path='Sapato' element={<Sapato />}></Route>
+                <Route path='Brincos' element={<Brincos />}></Route>
+              </Route>
+              <Route path="Proddomestico" element={<Proddomestico />}>
+                <Route path='Cozinha' element={<Cozinha />}></Route>
+                <Route path='Limpeza' element={<Limpeza />}></Route>
+                <Route path='Electricos' element={<Electricos />}></Route>
+              </Route>
+            </Route>
+            <Route path="/Servico" element={<Servico />} />
+            <Route path="/Empreendedores" element={<Empreendedores />} >
+              <Route path="Emprendeproduto" element={<Emprendeproduto />} ></Route>
+              <Route path="Emprendeserviço" element={<Emprendeserviço />}></Route>
+            </Route>
+            <Route path="/Estadosba" element={<Estadosba />} />
+            <Route path="/Seinscrever" element={<Seinscrever />} />
+            <Route path='/produto/:slug' element={<Individual />} />
+          </Routes>
+        </Container>
+      </main>
+      <div className='Footer'>
+        <Footer />
+      </div>
+
     </div>
   );
 }

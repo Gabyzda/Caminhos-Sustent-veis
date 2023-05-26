@@ -9,9 +9,9 @@ function SobreNos() {
     <div className="SobreNos">
    
 
-      <h1> CAMINHOS SUSTENTAVEIS</h1>
+      {/*<h1> CAMINHOS SUSTENTAVEIS</h1>*/}
       <CardDinamic />
-      <h1>SobreNos</h1>
+      <h1>SobreNós</h1>
       <p>
       Somos Migrantes Venezuelanos, uma equipe formada pela igualdade de gênero
       </p> 
