@@ -4,10 +4,15 @@ import "./App.css";
 
 
 
-function Footer(){
+function Footer() {
 
-    return(
-<h1>DERECHOS RESERVACOS</h1>
+    return (
+
+        <div classname="text-center">
+            <p>
+                &copy; 2023 Todos os Dereitos Reservados
+            </p>
+        </div>
 
     );
 }
