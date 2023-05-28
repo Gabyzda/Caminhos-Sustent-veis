@@ -31,6 +31,15 @@ main {
   flex: 1;
 }
 
+.btn-primary {
+  background-color: #fdbb05;
+  color: #431a03;
+}
+
+.rating span {
+  color: #fde406
+}
+
 
 
 
