@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, NavLink, } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, NavLink, } from 'react-router-dom';
 import logo_large from './logo_large.png';
 import SobreNos from './componentes/SobreNos';
 import Produto from './componentes/Produto';
@@ -27,7 +27,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 export default function App() {
 
   return (
-
+<BrowserRouter>
     <div className='d-flex flex-column site-container'>
 
       <header>
@@ -82,7 +82,7 @@ export default function App() {
         </Navbar>
       </header>
       <main>
-        <Container>
+        <Container className="mt-3">
           <Routes>
             <Route path="/" element={<SobreNos />} />
             <Route path="/SobreNos" element={<SobreNos />} />
@@ -114,6 +114,7 @@ export default function App() {
       </div>
 
     </div>
+    </BrowserRouter>
   );
 }
 
