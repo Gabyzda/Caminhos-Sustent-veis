@@ -10,7 +10,7 @@ const data = {                                  //objeto
       brand: 'Yahweh',                    //marca
       rating: 4.5,                        //qualificação
       numReviews: 10,                     //num de comentários
-      description: 'high quality product',
+      description: 'Produto de Alta Qualidade',
     },
     {
       name: '705 Camisa Fitness',
@@ -18,11 +18,11 @@ const data = {                                  //objeto
       category: 'Camisas',
       image: '/images/p2.jpg',
       price: 250,
-      countInStock: 20,
+      countInStock: 0,
       brand: '705',
       rating: 4.0,
       numReviews: 10,
-      description: 'high quality product',
+      description: 'Produto de Alta Qualidade',
     },
     {
       name: 'Rosa Calça Fitness',
@@ -34,7 +34,7 @@ const data = {                                  //objeto
       brand: 'Rosa',
       rating: 4.5,
       numReviews: 14,
-      description: 'high quality product',
+      description: 'Produto de Alta Qualidade',
     },
     {
       name: 'Cinza Calça Fit',
@@ -46,7 +46,7 @@ const data = {                                  //objeto
       brand: 'Cinza',
       rating: 4.5,
       numReviews: 10,
-      description: 'high quality product',
+      description: 'Produto de Alta Qualidade',
     },
   ],
 };

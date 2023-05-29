@@ -1,14 +1,14 @@
 import React from 'react';
-import { Route, Routes, NavLink, } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, NavLink, } from 'react-router-dom';
 import logo_large from './logo_large.png';
 import SobreNos from './componentes/SobreNos';
 import Produto from './componentes/Produto';
 import Prodbelleza from './componentes/Prodbelleza';
 import Proddomestico from './componentes/Proddomestico';
-import Emprendeproduto from './componentes/Emprendeproduto';
-import Emprendeserviço from './componentes/Emprendeserviço';
+//import Emprendeproduto from './componentes/Emprendeproduto';
+//import Emprendeserviço from './componentes/Emprendeserviço';
 import Servico from './componentes/Servico';
-import Empreendedores from './componentes/Empreendedores';
+//import Empreendedores from './componentes/Empreendedores';
 import './Apprutas.css';
 import Seinscrever from './componentes/Seinscrever';
 import Estadosba from './componentes/Estadosba';
@@ -27,7 +27,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 export default function App() {
 
   return (
-
+<BrowserRouter>
     <div className='d-flex flex-column site-container'>
 
       <header>
@@ -61,11 +61,11 @@ export default function App() {
                 color: isActive ? 'blue' : 'black',
                 marginRight: '13px'
               })}>Serviços</NavLink>
-              <NavLink to="/Empreendedores" style={({ isActive }) => ({
+              {/*<NavLink to="/Empreendedores" style={({ isActive }) => ({
                 textDecoration: 'none',
                 color: isActive ? 'blue' : 'black',
                 marginRight: '13px'
-              })}>Empreendedores</NavLink>
+              })}>Empreendedores</NavLink>*/}
               <NavLink to="/Estadosba" style={({ isActive }) => ({
                 textDecoration: 'none',
                 color: isActive ? 'blue' : 'black',
@@ -82,7 +82,7 @@ export default function App() {
         </Navbar>
       </header>
       <main>
-        <Container>
+        <Container className="mt-3">
           <Routes>
             <Route path="/" element={<SobreNos />} />
             <Route path="/SobreNos" element={<SobreNos />} />
@@ -99,10 +99,10 @@ export default function App() {
               </Route>
             </Route>
             <Route path="/Servico" element={<Servico />} />
-            <Route path="/Empreendedores" element={<Empreendedores />} >
+            {/*<Route path="/Empreendedores" element={<Empreendedores />} >
               <Route path="Emprendeproduto" element={<Emprendeproduto />} ></Route>
               <Route path="Emprendeserviço" element={<Emprendeserviço />}></Route>
-            </Route>
+            </Route>*/}
             <Route path="/Estadosba" element={<Estadosba />} />
             <Route path="/Seinscrever" element={<Seinscrever />} />
             <Route path='/produto/:slug' element={<Individual />} />
@@ -114,6 +114,7 @@ export default function App() {
       </div>
 
     </div>
+    </BrowserRouter>
   );
 }
 
