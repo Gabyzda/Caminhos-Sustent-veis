@@ -14,6 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import "./styles.css"
 
 
 const ExpandMore = styled((props) => {
@@ -40,24 +41,17 @@ export default function Carrousel() {
 
     
 
-    <Card sx={{ maxWidth: 345,margin: 6 }}>
+    <Card sx={{ maxWidth: 355,margin: 6 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+       
+      
         title="SERVIÇOS"
         
       />
       <CardMedia
         component="img"
-        height="194"
+        height="200"
+        
         image="https://www.religiondigital.org/2021/06/13/Migrantes_en_Brasil.png?"
         alt="Caminhos Sustentaves"
       />
@@ -88,18 +82,10 @@ export default function Carrousel() {
         </CardContent>
       </Collapse>
     </Card>
-    <Card sx={{ maxWidth: 345, margin: 6 }}>
+    <Card sx={{ maxWidth: 355, margin: 6 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+        
+       
         title="EMPREENDEDORISMO"
         
       />
@@ -137,24 +123,16 @@ export default function Carrousel() {
         </CardContent>
       </Collapse>
     </Card>
-    <Card sx={{ maxWidth: 345, margin: 6 }}>
+    <Card sx={{ maxWidth: 355, margin: 6 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+       
+       
         title="Estados piloto do aplicativo"
        
       />
       <CardMedia
         component="img"
-        height="194"
+        height=" 194"
         image="http://1.bp.blogspot.com/-V6-pNSwFzmY/Vp7Od1MACdI/AAAAAAAADts/7D7atM6czzA/s1600/POBREZA.jpg"
        
       />
@@ -187,18 +165,10 @@ export default function Carrousel() {
         </CardContent>
       </Collapse>
     </Card>
-    <Card sx={{ maxWidth: 345, margin: 6 }}>
+    <Card sx={{ maxWidth: 355, margin: 6 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+       
+       
         title="Equipe de desenvolvimento"
         
       />
@@ -233,22 +203,14 @@ export default function Carrousel() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           
-        |||||||
+     
         </CardContent>
       </Collapse>
     </Card>
-    <Card sx={{ maxWidth: 345,margin: 6 }}>
+    <Card sx={{ maxWidth: 355,margin: 6 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+       
+        
         title="Se inscrever"
         
       />
@@ -289,18 +251,10 @@ export default function Carrousel() {
         </CardContent>
       </Collapse>
     </Card>
-    <Card sx={{ maxWidth: 345,margin: 6  }}>
+    <Card sx={{ maxWidth: 355,margin: 6  }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+        
+       
         title="ODS"
         
       />
@@ -338,18 +292,10 @@ export default function Carrousel() {
         </CardContent>
       </Collapse>
     </Card>
-    <Card sx={{ maxWidth: 345,margin: 6  }}>
+    <Card sx={{ maxWidth: 355,margin: 6  }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+      
+      
         title="LOJA VIRTUAL DE SERVIÇOS"
         
       />
@@ -387,18 +333,10 @@ export default function Carrousel() {
         </CardContent>
       </Collapse>
     </Card>
-    <Card sx={{ maxWidth: 345,margin: 6  }}>
+    <Card sx={{ maxWidth: 405,margin: 6  }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            CS
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+        
+       
         title="LOJA VIRTUAL DE EMPREENDEDORES"
         
       />

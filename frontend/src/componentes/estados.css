@@ -1,0 +1,18 @@
+
+.img{
+    background-color:rgb(205, 241, 5);
+} 
+
+.img {
+
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+
+
+}
+img{
+
+    border-radius: 20px;
+   margin: 100px;
+}

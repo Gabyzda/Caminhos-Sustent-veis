@@ -1,18 +1,19 @@
 import React from "react";
 import "./App.css";
 import '../Apprutas.css';
+import "./estados.css"
 
 function Estadosba() {
   return (
     <section>
       <div className="Container">
         <h1>Empleabilidad</h1>
-        <p>
+        <h1>
           Caminos Sustentaves atendera dos areas fundamentales dentro de sus
           funciones.
-        </p>
-        <li>Empleabilidad</li>
-        <li>Emprendurismo</li>
+        </h1>
+        <li> <strong>Empleabilidad</strong></li>
+        <li><strong>Emprendurismo</strong></li>
 
         <img src="https://img.freepik.com/foto-gratis/cerrar-apreton-manos-gente-negocios_23-2148825865.jpg?w=740&t=st=1684693165~exp=1684693765~hmac=8579f7fe5c2623d9db3f7ad6d4716586f8b9b88be3aa8d2ad21162b96af162f5" />
         <img src="https://img.freepik.com/foto-gratis/sastre-mujer-trabajando-tela-cuero_1303-23022.jpg?w=740&t=st=1684693025~exp=1684693625~hmac=6455d250f8fda8013b01a487d709656a54c0507ef523c6526b75488993c89e54" />
@@ -20,30 +21,31 @@ function Estadosba() {
 
       <div className="Empleabilidade">
       <h1> Você está procurando por oportunidades de trabalho no Brasil?</h1>
-        <h2>“Nós damos alguns passos necessários para realizar seu sonho de um emprego</h2>
-        <p>
+        <h1>Nós damos alguns passos necessários para realizar seu sonho de um emprego</h1>
+        <h2>
         Nessa área de atenção, forneceremos conselhos sobre conhecimentos básicos e o 
-        </p><p>ABC de aspectos fundamentais que um migrante deve seguir para se adaptar à sua nova realidade migratória no Brasil. para se adaptar à sua nova realidade migratória no Brasil.
-        </p>
+        </h2>
+        <h2>ABC de aspectos fundamentais que um migrante deve seguir para se adaptar à sua nova realidade migratória no Brasil. para se adaptar à sua nova realidade migratória no Brasil.
+        </h2>
         <ul>
           <li>
 
-            <a href="https://conectesus-paciente.saude.gov.br/login">SAUDE</a>
+            <a href="https://conectesus-paciente.saude.gov.br/login"><strong>SAUDE</strong></a>
           </li>
           <li>
 
             <a href="https://help.unhcr.org/brazil/es/vivir-en-brasil/educacion/">
-              Educacion
+              <strong>Educacion</strong>
             </a>
           </li>
           <li>
 
             <a href="https://www.gov.br/trabalho-e-previdencia/pt-br/servicos">
-              Carteira de Trabalho Digital
+              <strong>Carteira de Trabalho Digital</strong>
             </a>
           </li>
           <li>
-            <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursosonline"> Educacion
+            <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursosonline"><strong>Educacion</strong> 
             </a>
           </li>
         </ul>
@@ -65,9 +67,9 @@ function Estadosba() {
   <h1>POPULAÇÃO DE INTERESSE POR TERRITÓRIO NO BRASIL</h1>
   <img src="https://journalabroad.com/wp-content/uploads/2018/04/recife-beach-sand-view.jpg" width= "1200px" height="400px"></img>
 <h1>Nordeste</h1>
-<article>O Nordeste, onde destacaremos nosso trabalho na Bahia, em Pernanbuco e no Rio Grande do Norte, concentra mais da metade dos extremamente pobres do Brasil, 53,2%, TELAM SE 2022. 
+<h1>O Nordeste, onde destacaremos nosso trabalho na Bahia, em Pernanbuco e no Rio Grande do Norte, concentra mais da metade dos extremamente pobres do Brasil, 53,2%, TELAM SE 2022. 
          Essa região carece de atenção dos órgãos internacionais para fornecer apoio direto à população de interesse, ou seja, migrantes e solicitantes de asilo. Por isso, o Sustainable 
-          é uma alternativa para prestar assistência a essa população vulnerável. Um ambiente com alto índice de pobreza e o mais grave é a solidão dos migrantes sem apoio.</article>
+          é uma alternativa para prestar assistência a essa população vulnerável. Um ambiente com alto índice de pobreza e o mais grave é a solidão dos migrantes sem apoio.</h1>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/v0HLjtYZWPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
