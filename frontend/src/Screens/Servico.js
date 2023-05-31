@@ -1,23 +1,15 @@
 import React from "react";
-/*import SobreNos from "./SobreNos";*/
-import { Link } from 'react-router-dom';
-/*import { useState } from "react";*/
-import { Helmet } from "react-helmet-async";
+import Cartres from "../components/Cartres";
 
-export default function Servico() {
+function Servico() {
   return (
-    <div>
-      <Helmet>
-        <title>Serviços</title>
-      </Helmet>
-      <form className="presenta_css">
-        <div>
-          <h3> Caminhos Sustentáveis </h3>
-          <h1 className="centrasobrenos">
-            Pagina Serviço En construccion </h1>
-          <Link to="/" style={{ textDecoration: 'none', color: "red" }} > ..[ RETORNAR A PÁGINA INICIAL ].. </Link>
-        </div>
-      </form>
+
+    <div className="servico">
+      <h1> Caminhos Sustentáveis </h1>
+      <h2>Divulgar as ofertas de serviços é muito importante, pois pode servir aos funcionários como um guia para localizar funcionários. É nossa ideia ser uma página de referência para a contratação de migrantes e refugiados</h2>
+      <Cartres></Cartres>
     </div>
+
   );
 }
+export default Servico;

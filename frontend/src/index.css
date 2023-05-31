@@ -154,6 +154,47 @@ main {
   border: 0.1rem solid black;
 }
 
+/*.img{
+  background-color:rgb(205, 241, 5);
+} 
+
+.img {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+img{
+  border-radius: 20px;
+ margin: 100px;
+}
+
+h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+color: rgb(33, 29, 2); 
+}
+.p{ 
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  color: rgb(33, 29, 2); 
+  }
+
+.cars {
+  background-color: rgb(88, 77, 4);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.CardMedia img {
+display: flex;
+text-align: center;
+justify-content: center;
+}*/
+
 footer {
   background-color: #ca932b;
   font-weight: bold;
