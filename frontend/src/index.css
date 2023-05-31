@@ -55,20 +55,6 @@ main {
   max-width: 55%;
 }
 
-.Empleabilidade ul li {
-  list-style: none;
-  color: white;
-}
-.Empleabilidade ul li a {
-  text-decoration: none;
-  list-style: none;
-  color: #ffda05;
-}
-
-.Empleabilidade {
-  background-color: #5d3b27;
-  color: white;
-}
 
 .produtos {
   display: flex; /*uno al lado de otro*/

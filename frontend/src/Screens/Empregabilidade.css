@@ -1,0 +1,56 @@
+.Containerdos {
+   
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+
+.Containerdos ul li {
+  list-style: none;
+  color: white;
+}
+.Containerdos ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+}
+.h1emprega{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+.ulemprega {
+
+    list-style: disc;
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+.imgemprega {
+ 
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgba(202,147,43);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .imgempregadois {
+ 
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgba(202,147,43);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .imgemprega:hover {
+    transform: scale(1.10);
+  }
