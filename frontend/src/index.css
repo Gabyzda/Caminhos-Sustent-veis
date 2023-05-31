@@ -56,7 +56,6 @@ main {
 }
 
 
-
 .produtos {
   display: flex; /*uno al lado de otro*/
   flex-wrap: wrap; /* os novos são empurrados para baixo*/
