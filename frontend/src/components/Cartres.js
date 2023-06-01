@@ -113,6 +113,27 @@ function Cartres() {
           </Card.Text>
         </Card.Body>
       </Card>
+      <Card style={{ width: '10rem ' }}>
+        <Card.Img variant="top" src="https://mascotafiel.com/wp-content/uploads/2016/02/paseador-de-perros_opt-compressor-1-1-1-1-1.jpg" width={"300px,300px"} />
+        <Card.Body>
+          <Card.Title><strong>Passeador de cães - Boa Viagem Recife</strong></Card.Title>
+          <Card.Text>
+            Luis campo Passeador de cães - Boa Viagem Recife
+            113256789
+          </Card.Text>
+        </Card.Body>
+      </Card>
+
+      <Card style={{ width: '10rem ' }}>
+        <Card.Img variant="top" src="https://img.freepik.com/foto-gratis/electricista-masculino-trabaja-cuadro-distribucion-cable-conexion-electrica_169016-18195.jpg?w=740&t=st=1684982372~exp=1684982972~hmac=b9e8100e643fd0a295d8824b3eb89ff7a5ea0c49ed6008fb02f9721f23b3db4a" width={"300px,300px"} />
+        <Card.Body>
+          <Card.Title><strong>Electricista</strong></Card.Title>
+          <Card.Text>
+            Martiz Caballero oferece seu trabalho disponível para transferência mora em Recife, Pernambuco
+            113256789
+          </Card.Text>
+        </Card.Body>
+      </Card>
 
     </section>
   );
