@@ -205,6 +205,10 @@ main {
   padding: 10px; /* Agrega separación en los cuatro lados de las tarjetas */
 }
 
+.small-container {
+  max-width: 600px;
+}
+
 footer {
   background-color: #ca932b;
   font-weight: bold;
