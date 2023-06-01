@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function Cartres() {
   return (
-    <section className="card">
+    <section className="ticket">
 
       <Card style={{ width: '10rem' }}>
         <Card.Img variant="top" src="https://img.freepik.com/foto-gratis/reparacion-hogar-hombre-mediana-edad-inspeccionando-tuberia-tocando-mano-debajo-fregadero-cocina-moderna-elegante_259150-58265.jpg?w=740&t=st=1684955674~exp=1684956274~hmac=3cc766bd4dfdc7c7894b6ef0ca3d08ab037f51a41c8532b41c4a11a9870974fb" width={"300px,300px"} />
@@ -13,11 +13,8 @@ function Cartres() {
             Juan Perez oferece seu trabalho em casa no Recife e arredores
             telef 113256789
           </Card.Text>
-
         </Card.Body>
       </Card>
-
-
 
       <Card style={{ width: '10rem ' }}>
         <Card.Img variant="top" src="https://as1.ftcdn.net/v2/jpg/00/57/19/90/1000_F_57199075_8qPTCvJw8pZy3ZSxut230b3lOCLlogEm.jpg" width={"300px,300px"} />
@@ -36,25 +33,22 @@ function Cartres() {
           <Card.Title><strong>Electricista</strong></Card.Title>
           <Card.Text>
             Martiz Caballero oferece seu trabalho disponível para transferência mora em Recife, Pernambuco
-
             113256789
           </Card.Text>
-
         </Card.Body>
       </Card>
-
-
 
       <Card style={{ width: '10rem ' }}>
         <Card.Img variant="top" src="https://img.freepik.com/foto-gratis/trabajador-supermercado-midiendo-vendiendo-carne-al-cliente_342744-1074.jpg?w=740&t=st=1684958169~exp=1684958769~hmac=4970618a478f4d6232c3545643cf3e1ace6e14c5eb6881c5f0cda37a47002b68" width={"300px,300px"} />
         <Card.Body>
-          <Card.Title> <strong>garçonete</strong></Card.Title>
+          <Card.Title> <strong>Garçonete</strong></Card.Title>
           <Card.Text>
             Maria Ruiz Oferece seus serviços de garçonete em lanchonete. Tem experiência, mora em Recife, Pernambuco
             113256789
           </Card.Text>
         </Card.Body>
       </Card>
+
       <Card style={{ width: '10rem' }}>
         <Card.Img variant="top" src="https://img.freepik.com/foto-gratis/enfermera-cuidando-anciana_53876-48760.jpg?w=740&t=st=1684982455~exp=1684983055~hmac=db7e1fb5c5a36370e1082e4d53480b75a4a52f3d6f4e5e2019fcdc44f75fd0bc" width={"300px,300px"} />
         <Card.Body>
@@ -63,19 +57,16 @@ function Cartres() {
             Carmen Montes,Cuidador de idoso, experiente, leito disponível
             113256789
           </Card.Text>
-
         </Card.Body>
       </Card>
-
-
 
       <Card style={{ width: '10rem ' }}>
         <Card.Img variant="top" src=" https://img.freepik.com/foto-gratis/familia-feliz-madre-e-hija-juntas-dibujan-marcadores-mujer-ayuda-nina_639032-1191.jpg?w=740&t=st=1684959226~exp=1684959826~hmac=2fe6d8a4c7bb8504e34be0d3c85c79ad2888caa5717651653f8048567b3b1a71" width={"300px,300px"} />
         <Card.Body>
-          <Card.Title><strong>babá, ajuda com lição de casa</strong></Card.Title>
+          <Card.Title><strong>Babá, ajuda com lição de casa</strong></Card.Title>
           <Card.Text>
-            Carmen Soto, babá, ajuda com lição de casa   113256789
-
+            Carmen Soto, babá, ajuda com lição de casa
+            113256789
           </Card.Text>
         </Card.Body>
       </Card>
@@ -88,15 +79,13 @@ function Cartres() {
             Luis campo Passeador de cães - Boa Viagem Recife
             113256789
           </Card.Text>
-
         </Card.Body>
       </Card>
-
 
       <Card style={{ width: '10rem ' }}>
         <Card.Img variant="top" src="https://img.freepik.com/foto-gratis/feliz-mujer-cajera-escaneando-articulos-supermercado_171337-2418.jpg?w=740&t=st=1684958414~exp=1684959014~hmac=de16bd510b7f68d345c1812f95985f50a0f7b60b879cf5b2982bb00182750a25" width={"300px,300px"} />
         <Card.Body>
-          <Card.Title><strong>caixa</strong></Card.Title>
+          <Card.Title><strong>Caixa</strong></Card.Title>
           <Card.Text>
             Lucila Ribas oferece seu serviço como operadora de caixa, tem experiência, mora em Recife 113256789
           </Card.Text>
@@ -119,14 +108,13 @@ function Cartres() {
         <Card.Body>
           <Card.Title><strong>Limpador de hora em hora</strong></Card.Title>
           <Card.Text>
-            Rosa Teran Limpador de hora em hora. recife
+            Rosa Teran Limpador de hora em hora. Recife
             113256789
           </Card.Text>
         </Card.Body>
       </Card>
 
     </section>
-
   );
 }
 

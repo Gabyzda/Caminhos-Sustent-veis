@@ -7,7 +7,7 @@ function SobreNos() {
   return (
     <div className="SobreNos">
       <Helmet>
-        <title>Sobre Nós</title>
+        <title>Caminhos Sustentáveis</title>
       </Helmet>
       <CardDinamic />
       <h1>SobreNós</h1>

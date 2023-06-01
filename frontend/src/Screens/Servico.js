@@ -5,8 +5,8 @@ function Servico() {
   return (
 
     <div className="servico">
-      <h1> Caminhos Sustentáveis </h1>
-      <h2>Divulgar as ofertas de serviços é muito importante, pois pode servir aos funcionários como um guia para localizar funcionários. É nossa ideia ser uma página de referência para a contratação de migrantes e refugiados</h2>
+      <h2> Serviços </h2>
+      <h3>Divulgar as ofertas de serviços é de extrema importância, pois pode servir como um guia para os empregadores localizarem profissionais qualificados. Nosso objetivo é nos tornarmos uma referência para a contratação de migrantes e refugiados, oferecendo uma plataforma que facilite a conexão entre empregadores e trabalhadores.</h3>
       <Cartres></Cartres>
     </div>
 
